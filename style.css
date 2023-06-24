@@ -1,39 +1,47 @@
-.exercise {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 2px solid red;
+body {
+  border: 1px solid red;
 }
 
-.exercise section {
+div h1 {
+  display: flex;
+  justify-content: center;
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+div .firstSection {
   display: flex;
   padding: 10px;
 }
-
-.exercise .exercise__title {
-  color: green;
-  text-decoration: 1px underline blue;
-  text-underline-offset: 7px;
-}
-
-.sec__1 > article {
+div .firstSection article {
   border: 1px solid green;
+  justify-content: space-evenly;
+  padding: inherit;
 }
-
-article:nth-child(even) {
-  color: red;
-}
-
-article:nth-child(odd) {
+div .firstSection article:nth-child(odd) {
   color: blue;
+  border-color: green;
+  font-size: 1rem;
 }
-
-.sec__2 article {
-  border: 1px solid;
+div .firstSection article:nth-child(even) {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+div .secondSection {
+  display: flex;
+  padding: 10px;
+}
+div .secondSection article {
+  border: 1px solid blue;
+  flex: 1;
+}
+div .secondSection article p {
+  display: flex;
+  justify-content: center;
   color: green;
   border-color: blue;
-  font-size: 24px;
+  font-size: calc(24px / 14px) rem;
 }
 
 /*# sourceMappingURL=style.css.map */
